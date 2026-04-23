@@ -1,0 +1,22 @@
+plugins {
+    id 'fabric-loom' version '0.10-SNAPSHOT'
+}
+
+group 'com.example.mod'
+version '1.0.0'
+archivesBaseName = 'cit-twice'
+
+task.javadoc { enabled = false }
+
+minecraft {
+    // Use the latest version of Minecraft.
+    version = '1.21.4'
+    // Specify the mappings. You can use 'yarn' or 'official'.
+    mappings channel: 'official', version: '1.21.4'
+    // Specify dependencies here.
+    // example: modCompile "net.fabricmc:fabric-api:${project.fabric_version}"
+}
+
+dependencies {
+    modCompile "net.fabricmc:fabric-api:${project.fabric_version}"
+}
