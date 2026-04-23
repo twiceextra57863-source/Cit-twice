@@ -1,4 +1,0 @@
-// This file configures the Gradle build for the Cit-twice Fabric mod project.
-
-rootProject.name = 'cit-twice'
-include 'mod'
